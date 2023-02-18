@@ -1,4 +1,9 @@
 package hassan.io.builder;
+/*
+* This is the builder interface:
+* builder interface contains methods to set the values of the object's properties,
+*  and returns the object itself to allow method chaining.
+* */
 
 public interface UserBuilder {
     UserAccount build() throws Exception;

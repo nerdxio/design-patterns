@@ -1,5 +1,5 @@
 package hassan.io.builder;
-
+// this class behave as Client
 public class Demo {
     public static void main(String[] args) throws Exception {
         UserBuilder userBuilder = UserAccount.getBuilder();

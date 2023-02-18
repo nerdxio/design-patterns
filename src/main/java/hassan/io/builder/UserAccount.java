@@ -1,5 +1,6 @@
 package hassan.io.builder;
 
+//this is our class that we need to build
 public class UserAccount {
     String firstName;
     String lastName;

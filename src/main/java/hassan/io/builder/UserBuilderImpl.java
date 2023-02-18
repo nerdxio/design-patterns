@@ -1,5 +1,7 @@
 package hassan.io.builder;
-
+/*
+* UserBuilderImpl is ConcreteBuilder The class that implements UserBuilder
+* and add the implementation log to sets and returns object */
 public class UserBuilderImpl implements UserBuilder{
     UserAccount userAccount;
 
