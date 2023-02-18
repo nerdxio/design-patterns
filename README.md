@@ -2,7 +2,7 @@
 A design pattern is a reusable solution to a commonly occurring problem in software design.
 Design patterns provide a way to describe best practices and proven solutions for developing software in a structured 
 and organized manner.
-## The type of Design patterns
+## Types of Design Patterns
 There are three main categories of design patterns:
 * **Creational patterns:**  
   hese patterns deal with object creation mechanisms, trying to create objects in a manner suitable to the situation.
