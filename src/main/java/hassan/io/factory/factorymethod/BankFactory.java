@@ -1,4 +1,4 @@
-package hassan.io.factory;
+package hassan.io.factory.factorymethod;
 
 public class BankFactory implements IBBankFactory{
 

@@ -1,4 +1,4 @@
-package hassan.io.factory;
+package hassan.io.factory.factorymethod;
 
 import java.util.Scanner;
 

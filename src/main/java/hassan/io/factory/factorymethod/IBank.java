@@ -1,4 +1,4 @@
-package hassan.io.factory;
+package hassan.io.factory.factorymethod;
 
 public interface IBank {
     String withdraw();
