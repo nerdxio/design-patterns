@@ -5,7 +5,7 @@ import java.util.List;
 
 public class PrototypeDemo {
     /*
-    * Prototype is a creational design pattern that lets you copy existing objects
+    * Prototype is a creation design pattern that lets you copy existing objects
     *  without making your code dependent on their classes.
     */
     public static void main(String[] args) {
