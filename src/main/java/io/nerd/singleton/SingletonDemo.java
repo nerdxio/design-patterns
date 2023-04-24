@@ -1,9 +1,6 @@
-package io.nerd;
+package io.nerd.singleton;
 
-import io.nerd.singleton.Counter;
-import io.nerd.singleton.Singleton;
-
-public class Main {
+public class SingletonDemo {
     public static void main(String[] args) {
 
         Thread thread = new Thread(new Runnable() {
