@@ -12,4 +12,4 @@ There are three main categories of design patterns:
   Examples of structural patterns include Adapter, Facade, and Decorator.
 * **Behavioral patterns:**   
 These patterns deal with object interaction and communication, defining how objects communicate with one another
-to achieve certain goals. Examples of behavioral patterns include Observer, Command, and Strategy.  
+to achieve certain goals. Examples of behavioral patterns include Observer, Command, and Strategy .  
