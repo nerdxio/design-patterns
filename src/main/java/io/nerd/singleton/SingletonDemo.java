@@ -3,49 +3,38 @@ package io.nerd.singleton;
 public class SingletonDemo {
     public static void main(String[] args) {
 
-        Thread thread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                var count1 = Counter.getInstance();
-                count1.addOne();
-                System.out.println("Counter 1: " + count1.getCount());
-            }
+        var thread = new Thread(() -> {
+            var count1 = Counter.getInstance();
+            count1.addOne();
+            System.out.println("Counter 1: " + count1.getCount() + count1.hashCode());
         });
 
-        Thread thread2 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                var count2 = Counter.getInstance();
-                count2.addOne();
-                System.out.println("Counter 2: " + count2.getCount());
-            }
+        var thread2 = new Thread(() -> {
+            var count2 = Counter.getInstance();
+            count2.addOne();
+            System.out.println("Counter2: " + count2.getCount() + count2.hashCode());
         });
 
-        thread.run();
-        thread2.run();
+        thread.start();
+        thread2.start();
 
         //other way to impl using Our Class Singleton
 
-        Thread threadSingleton1 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                Singleton.INSTANCE.addOne();
-                System.out.println("Thead 1 Counter : " + Singleton.INSTANCE.getCounter());
-            }
+        var threadWithEnum1 = new Thread(() -> {
+            Singleton.INSTANCE.addOne();
+            System.out.println("Thead 1 Counter : " + Singleton.INSTANCE.getCounter());
         });
 
-        Thread threadSingleton2 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                Singleton.INSTANCE.addOne();
-                System.out.println("Thead 1 Counter : " + Singleton.INSTANCE.getCounter());
-            }
-        });
+        Thread threadWithEnum2 = new Thread(() -> {
+            Singleton.INSTANCE.addOne();
+            System.out.println("Thead 1 Counter : " + Singleton.INSTANCE.getCounter());
+        }
+        );
 
-        thread.run();
-        thread2.run();
+        thread.start();
+        thread2.start();
 
-        threadSingleton1.run();
-        threadSingleton2.run();
+        threadWithEnum1.start();
+        threadWithEnum2.start();
     }
 }
