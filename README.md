@@ -11,9 +11,6 @@ refresh your knowledge, this repository aims to provide clear and concise exampl
     - [Creational Patterns](#creational-patterns)
     - [Structural Patterns](#structural-patterns)
     - [Behavioral Patterns](#behavioral-patterns)
-3. [Getting Started](#getting-started)
-4. [Contributing](#contributing)
-5. [License](#license)
 
 ## Introduction
 
